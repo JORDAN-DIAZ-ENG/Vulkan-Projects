@@ -157,11 +157,16 @@
   <ItemGroup>
     <ClCompile Include="FirstApp.cpp" />
     <ClCompile Include="LittleVulkanEngineWindow.cpp" />
+    <ClCompile Include="lvePipeline.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FirstApp.h" />
     <ClInclude Include="LittleVulkanEngineWindow.h" />
+    <ClInclude Include="lvePipeline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compile.bat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

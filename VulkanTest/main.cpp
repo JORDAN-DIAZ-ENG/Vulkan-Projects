@@ -6,7 +6,7 @@
 
 int main()
 {
-	lvew::FirstApp app{};
+	lve::FirstApp app{};
 
 	try
 	{

@@ -1,6 +1,6 @@
 #include "FirstApp.h"
 
-namespace lvew
+namespace lve
 {
 	void FirstApp::run()
 	{

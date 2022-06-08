@@ -155,15 +155,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="LveDevice.cpp" />
     <ClCompile Include="FirstApp.cpp" />
-    <ClCompile Include="LittleVulkanEngineWindow.cpp" />
-    <ClCompile Include="lvePipeline.cpp" />
+    <ClCompile Include="LveWindow.cpp" />
+    <ClCompile Include="LvePipeline.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="LveDevice.h" />
     <ClInclude Include="FirstApp.h" />
-    <ClInclude Include="LittleVulkanEngineWindow.h" />
-    <ClInclude Include="lvePipeline.h" />
+    <ClInclude Include="LveWindow.h" />
+    <ClInclude Include="LvePipeline.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="compile.bat" />

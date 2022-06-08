@@ -1,9 +1,10 @@
 #pragma once
 
-#include "LittleVulkanEngineWindow.h"
-#include "lvePipeline.h"
+#include "LveWindow.h"
+#include "LvePipeline.h"
+#include "LveDevice.h"
 
-namespace lvew
+namespace lve
 {
 	class FirstApp
 	{
@@ -15,6 +16,13 @@ namespace lvew
 
 	private:
 		LveWindow lveWindow{ WIDTH, HEIGHT, "Hello Vulkan!" };
-		LvePipeline lvePipeline{ "Shaders\\simple_shader.vert.spv", "Shaders\\simple_shader.frag.spv" };
+		LveDevice lveDevice{ lveWindow };
+		LvePipeline lvePipeline
+		{ 
+			lveDevice, 
+			"Shaders\\simple_shader.vert.spv", 
+			"Shaders\\simple_shader.frag.spv", 
+			LvePipeline::defaultPipelineConfigInfo(WIDTH, HEIGHT)
+		};
 	};
 }
